@@ -1,7 +1,7 @@
 from flask import Flask,jsonify,Response,make_response
 from flask_cors import CORS
-from datetime import datetime
-import json
+from datetime import datetime,timezone
+
 app = Flask(__name__)
 
 CORS(app)
@@ -10,7 +10,7 @@ CORS(app)
 @app.route('/',methods = ['GET','POST'])
 def home():
     email = "olaiwonismail@gmail.com"
-    date = datetime.now().isoformat()
+    date = datetime.now(timezone.utc).isoformat().replace("+00:00", "Z")
     github_url = "https://github.com/Olaiwonismail/HNG12-Stage-0"
     data = {
         "email":email,
