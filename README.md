@@ -61,7 +61,7 @@ Ensure you have the following installed:
 
 ## Deployment
 The API is deployed at:
-- **[Deployment URL]** (Replace with actual URL after deployment)
+- **https://dayo1111.pythonanywhere.com/** 
 
 ## Related Resources
 For more details about Python developers, check:
