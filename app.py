@@ -17,8 +17,7 @@ def home():
         "current_datetime":date,
         "github_url" : github_url
     }
-    print(data)
-    # return Response(data,mimetype='application/json')
+  
     return data
 
 
